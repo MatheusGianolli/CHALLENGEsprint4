@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, type SubmitHandler } from "react-hook-form";
 
+
 // Interface para os dados do formulário
 type FormInputs = {
   nome: string;
@@ -148,5 +149,4 @@ const Contact: React.FC = () => {
     </main>
   );
 };
-
 export default Contact;
