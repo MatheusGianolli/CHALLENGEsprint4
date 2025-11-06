@@ -3,8 +3,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // 2. Importa os componentes de layout (que aparecem sempre)
-import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
+import  Navbar  from './components/Navbar';
+import  Footer  from './components/Footer';
 
 // 3. Importa TODAS as suas páginas (as que mudam)
 import Home from './pages/Home';
@@ -12,6 +12,7 @@ import About from './pages/About';
 import Integrantes from './pages/Integrantes';
 import Faq from './pages/Faq';
 import Contact from './pages/Contato';
+import Team from './pages/Integrantes';
 
 // Define o componente principal da Aplicação
 const App: React.FC = () => {

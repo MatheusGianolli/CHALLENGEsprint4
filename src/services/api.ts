@@ -1,75 +1,72 @@
-// em src/services/api.ts
+// Defina a URL base da sua API Java já publicada
+const API_URL = "https://sua-api-remota.com/api";
 
-// Substitua pela URL da sua API Java (que deve estar no Vercel/Render/etc)
-const API_BASE_URL = "https://sua-api-java.deploy.com/api";
-
-// GET (Critério 4.I.a)
-export const getRecursos = async () => {
+// GET (Ler dados)
+export async function getRecursos() {
   try {
-    const response = await fetch(`${API_BASE_URL}/recursos`);
-    if (!response.ok) {
-      throw new Error("Falha ao buscar dados."); // Tratamento de erro
+    const response = await fetch(`${API_URL}/recursos`);
+    if (!response.ok) { // Tratamento de erro (Critério 4.a.iii)
+      throw new Error('Falha ao buscar dados');
     }
     const data = await response.json();
-    return data; // Manipulação correta dos dados
+    return data;
   } catch (error) {
-    console.error("Erro no GET:", error); // Tratamento de erro
-    throw error;
+    console.error("Erro no GET:", error);
+    throw error; // Propaga o erro para o componente
   }
-};
+}
 
-// POST (Critério 4.I.a)
-export const createRecurso = async (dados: any) => {
+// POST (Criar dado)
+export async function createRecurso(novoRecurso: any) { // Use sua Interface aqui
   try {
-    const response = await fetch(`${API_BASE_URL}/recursos`, {
+    const response = await fetch(`${API_URL}/recursos`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(dados),
+      body: JSON.stringify(novoRecurso),
     });
     if (!response.ok) {
-      throw new Error("Falha ao criar recurso."); // Tratamento de erro
+      throw new Error('Falha ao criar recurso');
     }
     return await response.json();
   } catch (error) {
     console.error("Erro no POST:", error);
     throw error;
   }
-};
+}
 
-// PUT (Critério 4.I.a)
-export const updateRecurso = async (id: number, dados: any) => {
+// PUT (Atualizar dado)
+export async function updateRecurso(id: string, recursoAtualizado: any) {
   try {
-    const response = await fetch(`${API_BASE_URL}/recursos/${id}`, {
+    const response = await fetch(`${API_URL}/recursos/${id}`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(dados),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(recursoAtualizado),
     });
     if (!response.ok) {
-      throw new Error("Falha ao atualizar recurso."); // Tratamento de erro
+      throw new Error('Falha ao atualizar recurso');
     }
     return await response.json();
   } catch (error) {
     console.error("Erro no PUT:", error);
     throw error;
   }
-};
+}
 
-// DELETE (Critério 4.I.a)
-export const deleteRecurso = async (id: number) => {
+// DELETE (Deletar dado)
+export async function deleteRecurso(id: string) {
   try {
-    const response = await fetch(`${API_BASE_URL}/recursos/${id}`, {
+    const response = await fetch(`${API_URL}/recursos/${id}`, {
       method: 'DELETE',
     });
     if (!response.ok) {
-      throw new Error("Falha ao deletar recurso."); // Tratamento de erro
+      throw new Error('Falha ao deletar recurso');
     }
-    return true; // Sucesso
+    // Delete geralmente retorna status 204 (No Content)
+    return { success: true }; 
   } catch (error) {
     console.error("Erro no DELETE:", error);
     throw error;
   }
-};
+}
