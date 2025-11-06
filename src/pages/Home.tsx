@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // --- ADICIONADO: Imports para a API ---
 import { getRecursos } from '../services/api'; // Ajuste o caminho se necessário
-import { Produto } from '../types/produto'; // Ajuste o caminho e o nome da interface
+import {  } from '../types/index'; // Ajuste o caminho e o nome da interface
 
 // Padronizando o nome do componente para "Home" e usando React.FC
 const Home: React.FC = () => {
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
 
   // --- ADICIONADO: Estados para os dados da API ---
   // (Renomeei para 'apiData' para não ter conflito)
-  const [apiData, setApiData] = useState<Produto[]>([]);
+  const [apiData, setApiData] = useState<any[]>([]);
   const [apiLoading, setApiLoading] = useState(true);
   const [apiError, setApiError] = useState<string | null>(null);
 
@@ -192,7 +192,7 @@ const Home: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
                 {/* Loop .map() para criar um card para cada item */}
-                {apiData.map((item) => (
+                {apiData.map((item: any) => (
                   <div 
                     // ===> MUDE 'item.id' para a sua chave primária (id, cpf, etc)
                     key={item.id} 
@@ -200,7 +200,7 @@ const Home: React.FC = () => {
                   >
                     {/* ===> MUDE 'item.nome' e 'item.preco' para os seus dados */}
                     <h4 className="text-xl font-bold text-gray-900 mb-2">{item.nome}</h4>
-                    <p className="text-gray-700">Preço: R$ {item.preco}</p>
+                    <p className="text-gray-700">Crm: {item.crm}</p>
                   </div>
                 ))}
               </div>

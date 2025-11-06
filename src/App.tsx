@@ -9,7 +9,6 @@ import  Footer  from './components/Footer';
 // 3. Importa TODAS as suas páginas (as que mudam)
 import Home from './pages/Home';
 import About from './pages/About';
-import Integrantes from './pages/Integrantes';
 import Faq from './pages/Faq';
 import Contact from './pages/Contato';
 import Team from './pages/Integrantes';
