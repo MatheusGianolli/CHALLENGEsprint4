@@ -2,10 +2,18 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Isso está 100% correto
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {}, // Aqui é onde você pode adicionar cores, fontes, etc.
+    extend: {
+      // ATUALIZAÇÃO: Adicionamos a cor 'hc-blue'
+      colors: {
+        'hc-blue-dark': '#003366', 
+        'hc-blue': '#0055A4',        // NOVA COR (Ex: Azul mais claro, ajuste o HEX)
+        'hc-green': '#00A859',       
+        'hc-green-dark': '#007F43',  
+      }
+    },
   },
-  plugins: [], // Aqui é onde você adiciona plugins
+  plugins: [],
 }
