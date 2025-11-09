@@ -57,7 +57,7 @@ Como Rodar o Projeto:
 
 Link do GitHub: [COLE A URL DO SEU REPOSITÓRIO GITHUB AQUI]
 
-Link do Vídeo (YouTube): [COLE A URL DO SEU VÍDEO DO YOUTUBE AQUI]
+Link do Vídeo (YouTube): https://youtu.be/KOmcWb_cfOA
 
 Link do Deploy (Vercel): [COLE A URL DO SEU DEPLOY DA VERCEL AQUI]
 
