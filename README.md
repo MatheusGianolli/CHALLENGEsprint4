@@ -3,6 +3,8 @@ Challenge Sprint 4 - Atendimento Digital HC
 Este é o projeto de front-end para a Sprint 4, construído em React, TypeScript e Vite.
 
 
+
+
 🧑‍💻 Integrantes
 Enzo Xavier Coelho - RM563379 - 1TDSPV
 
@@ -22,9 +24,13 @@ React
 
 -TailwindCSS
 
--React Router DOM
+-React Router DOOM
+
+
 
 Como Rodar o Projeto:
+
+
 Baixe ou clone o projeto.
 
 Abra o terminal na pasta do projeto.
@@ -38,14 +44,7 @@ Abra http://localhost:5173 no seu navegador.
  O consumo de dados (GET, POST, etc.) depende da URL da API de Java
 
 
- Sim, você tem toda razão. O modelo anterior era muito complexo.
 
-Aqui está um README.md muito mais simples e direto. Ele cumpre todos os critérios do professor sem nenhuma formatação desnecessária.
-
-Basta copiar e colar isso no seu arquivo README.md:
-
-Challenge Sprint 4 - Atendimento Digital HC
-Este é o projeto de front-end para a Sprint 4, construído em React, TypeScript e Vite.
 
 🔗 Links Obrigatórios
 Link do GitHub: [COLE A URL DO SEU REPOSITÓRIO GITHUB AQUI]
@@ -54,37 +53,9 @@ Link do Vídeo (YouTube): [COLE A URL DO SEU VÍDEO DO YOUTUBE AQUI]
 
 Link do Deploy (Vercel): [COLE A URL DO SEU DEPLOY DA VERCEL AQUI]
 
-🧑‍💻 Integrantes
-Enzo Xavier Coelho - RM563379 - 1TDSPV
 
-Gustavo Ribeiro Permagnani - RM564995 - 1TDSPV
 
-Matheus Gianolli - RM565258 - 1TDSPV
 
-🛠️ Informações do Sistema
-Tecnologias Usadas
-React
-
-Vite
-
-TypeScript
-
-TailwindCSS
-
-React Router DOM
-
-Como Rodar o Projeto:
-Baixe ou clone o projeto.
-
-Abra o terminal na pasta do projeto.
-
-Execute npm install para instalar as dependências.
-
-Execute npm run dev para iniciar o projeto.
-
-Abra http://localhost:5173 no seu navegador.
-
-Atenção: O consumo de dados (GET, POST, etc.) depende da URL da API de Java, que deve ser configurada no arquivo src/services/api.ts.
 
 📂 Estrutura de Pastas
 A estrutura principal do código está em /src:
@@ -104,14 +75,4 @@ Os ícones usados no projeto são emojis padrões (ex: 📞, 📧, 📍).
 Imagens do projeto:
 
 
-
-
-[COLE AQUI O PRINT/IMAGEM DO FORMULÁRIO DE CONTATO]
-
-🔗 Links Obrigatórios
-Link do GitHub: [COLE A URL DO SEU REPOSITÓRIO GITHUB AQUI]
-
-Link do Vídeo (YouTube): [COLE A URL DO SEU VÍDEO DO YOUTUBE AQUI]
-
-Link do Deploy (Vercel): [COLE A URL DO SEU DEPLOY DA VERCEL AQUI]
-
+🔗
