@@ -35,17 +35,17 @@ Tecnologias Usadas:
 Como Rodar o Projeto:
 
 
-Baixe ou clone o projeto.
+-Baixe ou clone o projeto.
 
-Abra o terminal na pasta do projeto.
+-Abra o terminal na pasta do projeto.
 
-Execute npm install para instalar as dependências.
+-Execute npm install para instalar as dependências.
 
-Execute npm run dev para iniciar o projeto.
+-Execute npm run dev para iniciar o projeto.
 
-Abra http://localhost:5173 no seu navegador.
+-Abra http://localhost:5173 no seu navegador.
 
- O consumo de dados (GET, POST, etc.) depende da URL da API de Java
+- O consumo de dados (GET, POST, etc.) depende da URL da API de Java
 
 
 
