@@ -3,7 +3,7 @@ import type { Integrante } from '../types/integrantes';
 
 // Lista de integrantes (eventualmente virá da API)
 const equipe: Integrante[] = [
-  { nome: 'Matheus Gianolli', rm: 12345, turma: '1TDX' },
+  { nome: 'Matheus Gianolli', rm: 565258, turma: '1TDSPV' },
   { nome: 'Integrante 2', rm: 54321, turma: '1TDX' },
 ];
 
