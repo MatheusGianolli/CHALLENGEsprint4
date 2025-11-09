@@ -59,7 +59,7 @@ Link do GitHub: [COLE A URL DO SEU REPOSITÓRIO GITHUB AQUI]
 
 Link do Vídeo (YouTube): https://youtu.be/KOmcWb_cfOA
 
-Link do Deploy (Vercel): [COLE A URL DO SEU DEPLOY DA VERCEL AQUI]
+Link do Deploy (Vercel): challeng-esprint4-lvke.vercel.app
 
 
 
