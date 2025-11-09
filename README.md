@@ -4,7 +4,6 @@ Este é o projeto de front-end para a Sprint 4, construído em React, TypeScript
 
 
 
-
 🧑‍💻 Integrantes
 Enzo Xavier Coelho - RM563379 - 1TDSPV
 
@@ -16,7 +15,10 @@ Matheus Gianolli - RM565258 - 1TDSPV
 
 🛠️ Informações do Sistema
 Tecnologias Usadas:
-React
+
+
+
+-React
 
 -Vite
 
@@ -25,6 +27,8 @@ React
 -TailwindCSS
 
 -React Router DOOM
+
+
 
 
 
