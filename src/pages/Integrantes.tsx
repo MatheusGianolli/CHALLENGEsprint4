@@ -1,19 +1,13 @@
 import React from 'react';
 import type { Integrante } from '../types/integrantes';
 
-// Dica: se vier de API depois, só substituir este array
 const equipe: Integrante[] = [
   { nome: 'Matheus Gianolli', rm: 565258, turma: '1TDSPV' },
   { nome: 'Gustavo Ribeiro', rm: 564995, turma: '1TDSPV' },
 ];
 
 const getIniciais = (nome: string) =>
-  nome
-    .split(' ')
-    .map(p => p[0])
-    .join('')
-    .slice(0, 2)
-    .toUpperCase();
+  nome.split(' ').map(p => p[0]).join('').slice(0, 2).toUpperCase();
 
 const Integrantes: React.FC = () => {
   return (
@@ -24,28 +18,22 @@ const Integrantes: React.FC = () => {
             Nossa Equipe
           </h2>
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Nome, RM e Turma (conforme critérios da entrega)
+            Nome, RM e Turma
           </p>
         </div>
-        {/* contador opcional */}
         <span className="rounded-full border px-3 py-1 text-xs text-gray-600 dark:text-gray-300">
           {equipe.length} integrante{equipe.length > 1 ? 's' : ''}
         </span>
       </header>
 
-      <ul
-        role="list"
-        className="grid gap-4 sm:grid-cols-2"
-      >
+      <ul role="list" className="grid gap-4 sm:grid-cols-2">
         {equipe.map((membro) => (
           <li
             key={membro.rm}
             className="group rounded-2xl border bg-white/70 p-4 shadow-sm backdrop-blur transition
-                       hover:-translate-y-0.5 hover:shadow-md
-                       dark:border-gray-800 dark:bg-gray-900/60"
+                       hover:shadow-md dark:border-gray-800 dark:bg-gray-900/60"
           >
             <div className="flex items-center gap-4">
-              {/* Avatar com iniciais */}
               <div
                 aria-hidden
                 className="grid h-12 w-12 place-items-center rounded-full
@@ -73,20 +61,7 @@ const Integrantes: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* linha sutil e ações (opcional) */}
-            <div className="mt-4 border-t dark:border-gray-800 pt-3 flex items-center justify-between">
-              <span className="text-xs text-gray-500 dark:text-gray-400">
-                Última atualização: agora
-              </span>
-              <button
-                type="button"
-                className="text-xs underline-offset-2 hover:underline outline-none
-                           focus-visible:ring-2 focus-visible:ring-emerald-400 rounded"
-              >
-                Detalhes
-              </button>
-            </div>
+            {/* Removido: footer com botão "Detalhes" */}
           </li>
         ))}
       </ul>
