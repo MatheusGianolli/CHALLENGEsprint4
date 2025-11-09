@@ -75,6 +75,8 @@ A estrutura principal do código está em /src:
 └── index.css     (Config do Tailwind)
 
 🖼️ Imagens e Ícones
+
+
 Os ícones usados no projeto são emojis padrões (ex: 📞, 📧, 📍).
 
 Imagens do projeto:
