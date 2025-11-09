@@ -70,13 +70,5 @@ export async function deleteRecurso(id: string) {
     throw error;
   }
 }
-// src/services/api.ts
-// ... (abaixo das outras funções mockadas) ...
 
-// Interface para os dados do formulário de contato
-interface MensagemDeContato {
-  nome: string;
-  email: string;
-  mensagem: string;
-}
 

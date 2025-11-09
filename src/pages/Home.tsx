@@ -166,7 +166,7 @@ const Home: React.FC = () => {
       <section className="py-16 bg-blue-50"> {/* Fundo azul-claro para diferenciar */}
         <div className="container mx-auto px-6">
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-10">
-            {/* ===> MUDE ESTE TÍTULO para algo que faça sentido (ex: "Especialidades Disponíveis") */}
+            {/*  */}
             Nossos Recursos da API
           </h3>
 
@@ -194,7 +194,7 @@ const Home: React.FC = () => {
                     key={item.id} 
                     className="border border-gray-200 rounded-lg shadow-lg p-6 bg-white"
                   >
-                    {/* ===> MUDE 'item.nome' e 'item.preco' para os seus dados */}
+                    {/**/}
                     <h4 className="text-xl font-bold text-gray-900 mb-2">{item.nome}</h4>
                     <p className="text-gray-700">Crm: {item.crm}</p>
                   </div>
