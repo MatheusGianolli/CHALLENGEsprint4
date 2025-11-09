@@ -1,5 +1,5 @@
 // Defina a URL base da sua API Java já publicada
-const API_URL = "https://sua-api-remota.com/api";
+const API_URL = "https://challenge-java-4sprint-1.onrender.com";
 
 // GET (Ler dados)
 export async function getRecursos() {

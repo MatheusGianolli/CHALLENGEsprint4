@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Seus dados do FAQ (estão ótimos)
+
 const faqs = [
   {
     question: "❓ Como funciona o agendamento de uma teleconsulta?",
@@ -24,11 +24,10 @@ const faqs = [
   },
 ];
 
-// --- CORREÇÃO: Nome do componente padronizado para 'Faq' ---
 const Faq: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  // Sua lógica de toggle (está perfeita)
+ 
   const handleToggle = (index: number) => {
     if (openIndex === index) {
       setOpenIndex(null); // Fecha o item clicado

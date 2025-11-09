@@ -1,8 +1,4 @@
-// -----------------------------------------------------------------
-// ARQUIVO: src/pages/Home.tsx (Versão Fundida)
-// -----------------------------------------------------------------
 
-// 1. Imports: Fundindo 'react' e adicionando os da API
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // --- ADICIONADO: Imports para a API ---
