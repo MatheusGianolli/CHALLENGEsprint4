@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Challenge Sprint 4 - Atendimento Digital HC
+Este é o projeto de front-end para a Sprint 4, construído em React, TypeScript e Vite.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+🧑‍💻 Integrantes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Enzo Xavier Coelho - RM563379 - 1TDSPV
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Gustavo Ribeiro Permagnani - RM564995 - 1TDSPV
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Matheus Gianolli - RM565258 - 1TDSPV
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1TDSPV
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🛠️ Informações do Sistema
+Tecnologias Usadas:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+-React
+
+-Vite
+
+-TypeScript
+
+-TailwindCSS
+
+-React Router DOOM
+
+
+
+
+
+Como Rodar o Projeto:
+
+
+-Baixe ou clone o projeto.
+
+-Abra o terminal na pasta do projeto.
+
+-Execute npm install para instalar as dependências.
+
+-Execute npm run dev para iniciar o projeto.
+
+-Abra http://localhost:5173 no seu navegador.
+
+- O consumo de dados (GET, POST, etc.) depende da URL da API de Java
+
+
+
+
+🔗 Links Obrigatórios
+
+Link do GitHub: [COLE A URL DO SEU REPOSITÓRIO GITHUB AQUI]
+
+Link do Vídeo (YouTube): https://youtu.be/KOmcWb_cfOA
+
+Link do Deploy (Vercel): [COLE A URL DO SEU DEPLOY DA VERCEL AQUI]
+
+
+
+
+
+📂 Estrutura de Pastas
+A estrutura principal do código está em /src:
+
+/src
+├── components/   (Navbar, Footer, )
+├── pages/        (Home, Contato, Integrantes, etc.)
+├── services/     (api.ts - Contém o CRUD)
+├── types/        (index.ts - Nossas interfaces)
+├── App.tsx       (Define as rotas)
+├── main.tsx      (Renderiza o React)
+└── index.css     (Config do Tailwind)
+
+🖼️ Imagens e Ícones
+
+
+Os ícones usados no projeto são emojis padrões (ex: 📞, 📧, 📍).
+
+Imagens do projeto:
+
+
+🔗
