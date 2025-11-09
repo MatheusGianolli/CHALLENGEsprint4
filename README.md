@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Challenge Sprint 4 - Atendimento Digital HC
+Este é o projeto de front-end para a Sprint 4, construído em React, TypeScript e Vite.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧑‍💻 Integrantes
+Enzo Xavier Coelho - RM563379 - 1TDSPV
 
-## React Compiler
+Gustavo Ribeiro Permagnani - RM564995 - 1TDSPV
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Matheus Gianolli - RM565258 - 1TDSPV
 
-## Expanding the ESLint configuration
+1TDSPV
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🛠️ Informações do Sistema
+Tecnologias Usadas:
+React
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+-TypeScript
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-TailwindCSS
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+-React Router DOM
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Como Rodar o Projeto:
+Baixe ou clone o projeto.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Abra o terminal na pasta do projeto.
+
+Execute npm install para instalar as dependências.
+
+Execute npm run dev para iniciar o projeto.
+
+Abra http://localhost:5173 no seu navegador.
+
+ O consumo de dados (GET, POST, etc.) depende da URL da API de Java
+
+
+ Sim, você tem toda razão. O modelo anterior era muito complexo.
+
+Aqui está um README.md muito mais simples e direto. Ele cumpre todos os critérios do professor sem nenhuma formatação desnecessária.
+
+Basta copiar e colar isso no seu arquivo README.md:
+
+Challenge Sprint 4 - Atendimento Digital HC
+Este é o projeto de front-end para a Sprint 4, construído em React, TypeScript e Vite.
+
+🔗 Links Obrigatórios
+Link do GitHub: [COLE A URL DO SEU REPOSITÓRIO GITHUB AQUI]
+
+Link do Vídeo (YouTube): [COLE A URL DO SEU VÍDEO DO YOUTUBE AQUI]
+
+Link do Deploy (Vercel): [COLE A URL DO SEU DEPLOY DA VERCEL AQUI]
+
+🧑‍💻 Integrantes
+Enzo Xavier Coelho - RM563379 - 1TDSPV
+
+Gustavo Ribeiro Permagnani - RM564995 - 1TDSPV
+
+Matheus Gianolli - RM565258 - 1TDSPV
+
+🛠️ Informações do Sistema
+Tecnologias Usadas
+React
+
+Vite
+
+TypeScript
+
+TailwindCSS
+
+React Router DOM
+
+Como Rodar o Projeto:
+Baixe ou clone o projeto.
+
+Abra o terminal na pasta do projeto.
+
+Execute npm install para instalar as dependências.
+
+Execute npm run dev para iniciar o projeto.
+
+Abra http://localhost:5173 no seu navegador.
+
+Atenção: O consumo de dados (GET, POST, etc.) depende da URL da API de Java, que deve ser configurada no arquivo src/services/api.ts.
+
+📂 Estrutura de Pastas
+A estrutura principal do código está em /src:
+
+/src
+├── components/   (Navbar, Footer, )
+├── pages/        (Home, Contato, Integrantes, etc.)
+├── services/     (api.ts - Contém o CRUD)
+├── types/        (index.ts - Nossas interfaces)
+├── App.tsx       (Define as rotas)
+├── main.tsx      (Renderiza o React)
+└── index.css     (Config do Tailwind)
+
+🖼️ Imagens e Ícones
+Os ícones usados no projeto são emojis padrões (ex: 📞, 📧, 📍).
+
+Imagens do projeto:
+
+
+
+
+[COLE AQUI O PRINT/IMAGEM DO FORMULÁRIO DE CONTATO]
+
+🔗 Links Obrigatórios
+Link do GitHub: [COLE A URL DO SEU REPOSITÓRIO GITHUB AQUI]
+
+Link do Vídeo (YouTube): [COLE A URL DO SEU VÍDEO DO YOUTUBE AQUI]
+
+Link do Deploy (Vercel): [COLE A URL DO SEU DEPLOY DA VERCEL AQUI]
+
