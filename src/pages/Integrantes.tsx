@@ -18,7 +18,7 @@ const Integrantes: React.FC = () => {
           <h2 id="titulo-integrantes" className="text-3xl font-extrabold tracking-tight">
             Nossa Equipe
           </h2>
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          <p className="mt-1 text-sm text-gray-550 dark:text-gray-450">
             Nome, RM e Turma
           </p>
         </div>
