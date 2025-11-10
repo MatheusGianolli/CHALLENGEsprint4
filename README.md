@@ -82,7 +82,7 @@ A estrutura principal do código está em /src:
 
 Os ícones usados no projeto são emojis padrões (ex: 📞, 📧, 📍).
 
-
+Imagens do projeto:
 
 
 🔗
