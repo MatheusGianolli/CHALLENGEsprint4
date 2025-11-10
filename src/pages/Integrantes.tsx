@@ -4,6 +4,7 @@ import type { Integrante } from '../types/integrantes';
 const equipe: Integrante[] = [
   { nome: 'Matheus Gianolli', rm: 565258, turma: '1TDSPV' },
   { nome: 'Gustavo Ribeiro', rm: 564995, turma: '1TDSPV' },
+  { nome: 'Enzo Xavier', rm:563379, turma: '1TDSPV'}
 ];
 
 const getIniciais = (nome: string) =>
