@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
 
   return (
     // Usando <main> e removendo o <div> desnecessário
-    <main className="bg-gray-50 min-h-screen py-16">
+    <main className="bg-gray-60 min-h-screen py-16">
       <div className="container mx-auto px-6">
 
         {/* Cabeçalho */}
