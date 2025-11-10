@@ -55,7 +55,7 @@ Como Rodar o Projeto:
 
 🔗 Links Obrigatórios
 
-Link do GitHub: [COLE A URL DO SEU REPOSITÓRIO GITHUB AQUI]
+Link do GitHub: https://github.com/MatheusGianolli/CHALLENGEsprint4.git
 
 Link do Vídeo (YouTube): https://youtu.be/KOmcWb_cfOA
 
